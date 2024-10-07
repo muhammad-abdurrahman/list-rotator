@@ -33,7 +33,7 @@ $(document).ready(function () {
         {value: "Majeda"},
         {value: "Tasmin"},
         {value: "Sidi"},
-        {value: "Shofakot"},
+        {value: "Saifur's dad"},
         {value: "Samiha"},
         {value: "Nasima"},
         {value: "Muhsin"},
