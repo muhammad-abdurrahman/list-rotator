@@ -121,7 +121,13 @@ $(document).ready(function () {
         const header = $("#header").val();
         const footer = $("#footer").val();
 
-        const rotatedNames = rotateNames(tagify.value, item, position);
+        let rotatedNames;
+
+        if (!item || !position) {
+            rotatedNames = rotateNames(tagify.value, tagify.value[0].value, 2);
+        } else {
+            rotatedNames = rotateNames(tagify.value, item, position);
+        }
 
         const outputEntries = [];
 
@@ -154,6 +160,12 @@ $(document).ready(function () {
 
         $("#copyBtn").removeClass("visually-hidden");
         $("#copyBtn").tooltip('dispose');
+
+        tagify.removeAllTags();
+        tagify.addTags(rotatedNames.map((n) => {
+            n.value = n.value.split(/\.\s/).pop();
+            return n;
+        }))
     });
 
     $('[data-bs-toggle="tooltip"]').tooltip()
@@ -234,7 +246,7 @@ $(document).ready(function () {
         const rotated = names.map((_, i) => names[(i - offset + length) % length]);
 
         rotated.map((n, i) => {
-            n.value = `${i + 1}. ${n.value.split(/\./).pop()}`;
+            n.value = `${i + 1}. ${n.value.split(/\.\s/).pop()}`;
             return n;
         })
 
