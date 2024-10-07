@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#header").val("*Monthly Quran Khatm - Deadline: *");
+    $("#header").val("*Monthly Qur'aan Khatm - Deadline:*");
     $("#footer").val(
         `*Juz 30 Allocation*
 1. Ayyub (al-Naas - al-Ikhlaas)
