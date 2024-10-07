@@ -181,6 +181,7 @@ $(document).ready(function () {
         $out.removeClass("border border-success-subtle rounded p-3");
         $("#copyBtn").addClass("visually-hidden");
         $("#copyBtn").tooltip('dispose');
+        tagify.removeAllTags();
     });
 
 
