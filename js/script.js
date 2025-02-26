@@ -4,9 +4,8 @@ $(document).ready(function () {
     $("#footer").val(
         `*Juz 30 Allocation*
 1. Ayyub (al-Naas - al-Ikhlaas)
-2. Hamza (al-Masad - al-Bayyinah)
-3. Aisha (al-Qadr - al-Ghaashiya)
-4. Khalid (al-A'la - al-Naba')
+2. Hamza (al-Masad - al-Layl)
+3. Aisha (al-Shams - al-Naba')
         `
     );
 
@@ -50,7 +49,7 @@ $(document).ready(function () {
         {value: "Rifath"},
         {value: "Fatema"},
         {value: "Monjila"},
-        {value: "Ruhul"},
+        {value: "Khalid"},
         {value: "Minhaj"},
         {value: "Moshahid"},
         {value: "Mutahir"},
