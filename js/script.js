@@ -32,7 +32,7 @@ $(document).ready(function () {
         {value: "Majeda"},
         {value: "Tasmin"},
         {value: "Sidi"},
-        {value: "Saifur's dad"},
+        {value: "Shofaqut"},
         {value: "Samiha"},
         {value: "Nasima"},
         {value: "Muhsin"},
