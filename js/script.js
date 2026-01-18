@@ -1,10 +1,10 @@
 $(document).ready(function () {
     let currentDate = new Date();
-    $("#header").val(`*Monthly Qur'aan Khatm - ${currentDate.toLocaleString('default', {month: 'long'})} ${currentDate.getFullYear()}*`);
+    $("#header").val(`*Monthly Qur'ān Khatm - ${currentDate.toLocaleString('default', {month: 'long'})} ${currentDate.getFullYear()}*`);
     $("#footer").val(
-        `*Juz 30 Allocation*
-1. Ayyub (al-Naas - al-Ikhlaas)
-2. Hamza (al-Masad - al-Layl)
+        `*Juz' 30 Allocation*
+1. Ayyub (al-Nās - al-Zalzalah)
+2. Hamza (al-Bayyinah - al-Layl)
 3. Aisha (al-Shams - al-Naba')
         `
     );
